@@ -1,0 +1,95 @@
+object RawMaterialFrm: TRawMaterialFrm
+  Left = 178
+  Top = 157
+  Width = 653
+  Height = 359
+  Caption = #21407#26448#26009#34920
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 645
+    Height = 49
+    Align = alTop
+    TabOrder = 0
+    object Bevel1: TBevel
+      Left = 0
+      Top = 40
+      Width = 641
+      Height = 3
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 8
+      Top = 5
+      Width = 280
+      Height = 33
+      DataSource = StrainCultureDM.DataSourceRawMaterial
+      TabOrder = 0
+    end
+    object RMEditBtn: TButton
+      Left = 448
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = #32534#36753
+      TabOrder = 1
+    end
+    object RMQueryBtn: TButton
+      Left = 536
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = #26597#35810
+      TabOrder = 2
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 49
+    Width = 645
+    Height = 240
+    Align = alTop
+    TabOrder = 1
+    object DBGrid1: TDBGrid
+      Left = 1
+      Top = 1
+      Width = 643
+      Height = 238
+      Align = alClient
+      DataSource = StrainCultureDM.DataSourceRawMaterial
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      TitleFont.Style = []
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Top = 289
+    Width = 645
+    Height = 41
+    Align = alTop
+    TabOrder = 2
+    object RMClsBtn: TButton
+      Left = 544
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = #20851#38381
+      TabOrder = 0
+      OnClick = RMClsBtnClick
+    end
+  end
+end
